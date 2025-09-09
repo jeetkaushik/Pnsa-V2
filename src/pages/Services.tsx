@@ -65,11 +65,11 @@ export default function Services() {
       {/* Hero Section */}
       {/* <section><img src={service_banner} alt="" className="w-full h-full object-cover h-1/2" /></section> */}
       {/* <section className="bg-gradient-hero py-16"> */}
-      {/* <section className="py-16"> */}
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <img src={service_banner} alt="" className="w-full h-full object-cover h-1/2" />
         </div>
-      
+      </section>
       
       {/* Services Grid */}
       {/* <section className="py-16 bg-white">

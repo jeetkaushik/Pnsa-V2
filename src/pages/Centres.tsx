@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import { MapPin, Phone, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/hero-shooting-range.jpg";
+import centersBanner from "@/assets/centers_banner.png";
 
 const centres = [
   {
@@ -27,7 +28,7 @@ export default function Centres() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-hero py-16">
+      {/* <section className="bg-gradient-hero py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">Our Centres</h1>
@@ -35,6 +36,11 @@ export default function Centres() {
               State-of-the-art facilities designed for Olympic-level training
             </p>
           </div>
+        </div>
+      </section> */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <img src={centersBanner} alt="" className="w-full h-full object-cover h-1/2" />
         </div>
       </section>
 

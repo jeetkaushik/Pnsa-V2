@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Layout from "@/components/Layout/Layout";
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/Home/ContactSection";
+import servicesBanner from "@/assets/services-banner.png";
 
 export default function CourseDetail() {
   const { id } = useParams();
@@ -8,7 +9,10 @@ export default function CourseDetail() {
   return (
     <Layout>
       <section className="py-16 bg-white">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-2">
+            <img src={servicesBanner} alt="" className="w-full h-full object-cover h-1/2" />
+        </div>
+        <div className="mt-12 mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-8">
             <h1 className="text-3xl lg:text-5xl font-bold text-gray-900">Course {id}</h1>
             <p className="text-gray-600 mt-4">Detailed information about Course {id}. Include syllabus, prerequisites, duration, and key takeaways.</p>
@@ -29,11 +33,7 @@ export default function CourseDetail() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <ContactForm title="Contact Us About This Course" />
-        </div>
-      </section>
+      <ContactSection />
     </Layout>
   );
 }

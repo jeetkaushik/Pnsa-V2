@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import founderImage from "@/assets/prakash-nanjappa.jpg";
 import studentImage from "@/assets/student-success.jpg";
+import galleryBanner from "@/assets/gallery_banner.png"
 
 const galleryItems = [
   {
@@ -62,7 +63,7 @@ export default function Gallery() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-hero py-16">
+      {/* <section className="bg-gradient-hero py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">Gallery</h1>
@@ -71,6 +72,11 @@ export default function Gallery() {
               For Marksmen To Unleash Their Full Potential
             </p>
           </div>
+        </div>
+      </section> */}
+        <section className="py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <img src={galleryBanner} alt="" className="w-full h-full object-cover h-1/2" />
         </div>
       </section>
 
