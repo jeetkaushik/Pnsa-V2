@@ -65,20 +65,14 @@ export default function Services() {
       {/* Hero Section */}
       {/* <section><img src={service_banner} alt="" className="w-full h-full object-cover h-1/2" /></section> */}
       {/* <section className="bg-gradient-hero py-16"> */}
-      <section className="py-16">
+      {/* <section className="py-16"> */}
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center text-white">
             <img src={service_banner} alt="" className="w-full h-full object-cover h-1/2" />
-            {/* <h1 className="text-4xl lg:text-6xl font-bold mb-6">Our Services</h1>
-            <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
-              Comprehensive training programs designed to develop Olympic-level shooters */}
-            {/* </p> */}
-          </div>
         </div>
-      </section>
-
+      
+      
       {/* Services Grid */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -119,10 +113,60 @@ export default function Services() {
             ))}
           </div>
         </div>
+      </section> */}
+
+      {/* Our Programs & Initiatives */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Programs and Initiatives</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Explore our flagship programs and academy initiatives.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1,2,3,4,5].map((i) => (
+              <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src={`https://picsum.photos/seed/program${i}/800/500`} alt="Program" className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Program {i}</h3>
+                  <p className="text-gray-600 mb-4">Short description about Program {i} highlighting key outcomes and audience.</p>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to={`/programs/${i}`}>Learn More</Link>
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Courses */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Courses</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Structured courses designed for different skill levels.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1,2,3,4,5].map((i) => (
+              <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src={`https://picsum.photos/seed/course${i}/800/500`} alt="Course" className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Course {i}</h3>
+                  <p className="text-gray-600 mb-4">Short description about Course {i} detailing content and benefits.</p>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to={`/courses/${i}`}>Learn More</Link>
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Training Process */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -175,7 +219,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-pnsa-dark">
