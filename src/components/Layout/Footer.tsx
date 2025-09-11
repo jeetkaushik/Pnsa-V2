@@ -1,25 +1,23 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import pnsaLogo from "@/assets/pnsa-logo.png";
+import footerimg from "@/assets/footer_bg.png"
 
 const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Our Services", href: "/services" },
-  { name: "Our Centres", href: "/centres" },
   { name: "Gallery", href: "/gallery" },
-  { name: "Contact Us", href: "/contact" },
 ];
 
-const utilityPages = [
-  { name: "Privacy Policy", href: "/privacy" },
-  { name: "Terms & Conditions", href: "/terms" },
-  { name: "Licenses", href: "/licenses" },
+const connect = [
+  { name: "Our Centres", href: "/centres" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative text-white bg-pnsa-dark">
+    <footer className="relative flex flex-col justify-between text-white bg-no-repeat bg-center min-h-[600px]" style={{ backgroundImage: `url(${footerimg})`}}>
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Academy Info */}
@@ -66,9 +64,9 @@ export default function Footer() {
 
           {/* Utility Pages */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Utility Pages</h3>
+            <h3 className="text-lg font-semibold mb-4">Let's connect</h3>
             <ul className="space-y-2">
-              {utilityPages.map((link) => (
+              {connect.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
@@ -112,12 +110,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        <div className="mt-8 pt-8 border-t border-white/10">
+      </div>
+      <div className="mt-8 pt-8 border-t bg-pnsa-dark border-white/10 min-h-[80px] ">
           <p className="text-center text-white/70">
             Copyright © PNSA
           </p>
-        </div>
       </div>
     </footer>
   );
