@@ -1,26 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-const founderImage = "/lovable-uploads/c11516d1-3102-4a67-ac8b-b83b08f73a06.png";
+// const founderImage = "/lovable-uploads/c11516d1-3102-4a67-ac8b-b83b08f73a06.png";
+import founderhome from "@/assets/Founder-home.png"
 
 export default function FounderSection() {
   return (
     <section className="py-16 bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           {/* Left Side - Images */}
           <div className="relative">
             <div>
               <img 
-                src={founderImage} 
+                src={founderhome} 
                 alt="Prakash Nanjappa" 
-                className="w-full h-auto object-contain shadow-elegant"
+                className="w-6/10 h-auto object-contain shadow-elegant"
               />
             </div>
           </div>
 
           {/* Right Side - Content */}
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-5xl lg:text-5xl font-bold text-gray-900 mb-6">
               Founder & CEO
             </h2>
             

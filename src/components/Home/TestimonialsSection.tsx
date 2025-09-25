@@ -1,29 +1,40 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import studentImage from "@/assets/student-success.jpg";
+import Testi1 from "@/assets/testi1.png";
+import Testi2 from "@/assets/testi2.png";
+import Testi3 from "@/assets/testi3.png";
+import Testi4 from "@/assets/testi4.png";
+
 
 const testimonials = [
   {
     id: 1,
-    name: "Priya Sharma",
-    role: "National Level Shooter",
-    image: studentImage,
-    quote: "PNSA transformed my shooting career completely. The personalized training approach and world-class facilities helped me achieve my Olympic dreams. Coach Prakash's guidance has been invaluable in my journey."
+    name: "Trishna N.D",
+    role: "Air Pistol Shooter",
+    image: Testi1,
+    quote: "I joined Prakash Nanjappa Shooting Academy two years ago, and it has been an incredible journey ever since. In this short span, I have won over 50+ medals at various competitions, and the experience of training under the guidance of an Olympian has truly transformed my game. The structured training, constant motivation, and expert mentorship at PNSA have helped me grow both technically and mentally as an athlete. I am proud to be a part of this academy and excited for what lies ahead!"
   },
   {
     id: 2,
-    name: "Arjun Patel",
-    role: "State Champion",
-    image: studentImage,
-    quote: "The mental training and technical expertise at PNSA is unmatched. I've seen tremendous improvement in my accuracy and confidence since joining the academy. Highly recommend to serious shooters."
+    name: "Siddhanth Ajay",
+    role: "Air Rifle Shooter",
+    image: Testi2,
+    quote: "I joined Prakash Nanjappa Shooting Academy (PNSA) when I was just 8 years old. In a short span of time, I have had the opportunity to learn a lot and have already won a couple of medals at various competitions. Training at PNSA has been a great experience—the coaches are very supportive, and the environment is both professional and encouraging. I am excited to continue my journey in shooting and keep improving every day!"
   },
   {
     id: 3,
-    name: "Maya Krishnan",
-    role: "Junior Olympic Participant",
-    image: studentImage,
-    quote: "Starting at PNSA as a beginner, I never imagined I'd compete at the junior Olympics. The comprehensive training program and supportive environment made all the difference in my development."
+    name: "Nithyashree",
+    role: "International Athlete",
+    image: Testi3,
+    quote: "I'm Nithyashree, an international athlete with over 15 years of experience in sports. Recently, I decided to explore the world of shooting sports and joined Prakash Nanjappa Shooting Academy (PNSA). It has been a truly wonderful experience. Learning under the guidance of Olympian and Arjuna Awardee Prakash Nanjappa and his team has been inspiring. The professionalism, attention to detail, and supportive training environment at PNSA have given me a fresh perspective on excellence in sport. Whether you are new to shooting or coming from another sport like me, PNSA is the perfect place to begin your journey."
+  },
+  {
+    id: 4,
+    name: "Bhoomika",
+    role: "Air Rifle Shooter",
+    image: Testi4,
+    quote: "I'm a rifle shooter and have won a couple of medals in my journey so far. Training at Prakash Nanjappa Shooting Academy (PNSA) has been a truly enriching experience. Under the guidance of the coaches and the supportive training team, I have not only improved my technical skills but also gained confidence and mental strength. The training environment at PNSA is professional, disciplined, and motivating—perfect for anyone serious about excelling in shooting sports. I am grateful to be a part of this journey!"
   }
 ];
 
@@ -45,7 +56,7 @@ export default function TestimonialsSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Real Stories
+            Our Shining Stars
           </h2>
         </div>
 

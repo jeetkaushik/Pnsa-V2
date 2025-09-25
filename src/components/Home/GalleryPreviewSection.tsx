@@ -2,8 +2,11 @@ import { Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-shooting-range.jpg";
-import studentImage from "@/assets/student-success.jpg";
-import prakashImage from "@/assets/prakash-nanjappa.jpg";
+import studentImage from "@/assets/Hero3.jpeg";
+import prakashImage from "@/assets/Hero2.jpeg";
+import image1 from "@/assets/Hero1.jpeg"
+import image2 from "@/assets/Hero4.jpeg"
+
 
 const galleryImages = [
   {
@@ -26,12 +29,12 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: heroImage,
+    src: image1,
     alt: "Competition training",
     category: "Training"
   },
   {
-    id: 5,
+    id: image2,
     src: studentImage,
     alt: "Student practice",
     category: "Training"

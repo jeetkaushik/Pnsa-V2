@@ -6,6 +6,25 @@
 All colors MUST be HSL.
 */
 
+/* marquees: animation + pause-on-hover */
+.marquee { width: 100%; overflow: hidden; }
+.marquee-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* animation: move left by 50% (we duplicated content) */
+  animation: marquee 10s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* moves by half (duplicate covers the rest) */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -69,8 +69,7 @@ export default function ContactSection() {
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-pnsa-green" />
                   <span className="text-gray-700">
-                    Rohine Residency, ABC<br />
-                    Banglore Colony
+                    Esteem Mall #127 & 128, 4th floor, Bellary Rd, Hebbal, Bangalore, Karnataka 560024, IN
                   </span>
                 </div>
                 

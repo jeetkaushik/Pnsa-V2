@@ -2,6 +2,7 @@ import Layout from "@/components/Layout/Layout";
 import HeroSection from "@/components/Home/HeroSection";
 import StatsSection from "@/components/Home/StatsSection";
 import FounderSection from "@/components/Home/FounderSection";
+import PartnersSection from "@/components/Home/PartnersSection";
 import RibbonSection from "@/components/Home/RibbonSection";
 import AimVisionSection from "@/components/Home/AimVisionSection";
 import ServicesSection from "@/components/Home/ServicesSection";
@@ -15,8 +16,9 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <FounderSection />
-      <RibbonSection />
+      <PartnersSection />
       <AimVisionSection />
+      <RibbonSection />
       <ServicesSection />
       <GalleryPreviewSection />
       <TestimonialsSection />

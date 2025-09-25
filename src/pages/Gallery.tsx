@@ -1,8 +1,8 @@
 import Layout from "@/components/Layout/Layout";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import founderImage from "@/assets/prakash-nanjappa.jpg";
-import studentImage from "@/assets/student-success.jpg";
+import founderImage from "@/assets/Hero1.jpeg";
+import studentImage from "@/assets/Hero2.jpeg";
 import galleryBanner from "@/assets/gallery_banner.png"
 
 const galleryItems = [
