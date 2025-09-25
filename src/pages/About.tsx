@@ -35,42 +35,42 @@ export default function About() {
         </div>
       </section> */}
 
-      <section
-        className="relative w-full h-[80vh] bg-cover bg-center flex items-center justify-center px-4"
-        style={{ backgroundImage: `url(${abouthero})` }}
-      >
-        {/* Orange card with white border */}
-        <div className="bg-orange-600 border-4 sm:border-8 border-white shadow-xl max-w-4xl w-full p-6 md:p-12 text-center text-white">
-          <h1 className="text-2xl md:text-3xl font-bold">PNSA</h1>
-          <div className="w-16 h-0.5 bg-white mx-auto my-4"></div>
-          <p className="text-sm md:text-base leading-relaxed">
-            Welcome to the Prakash Nanjappa Shooting Academy (PNSA), where passion
-            meets precision and dreams take flight. Founded in 2018 by the esteemed
-            Olympian and Arjuna Awardee, Prakash Nanjappa, PNSA stands as a beacon of
-            relentless dedication towards the growth of shooting sports in our
-            country.
-          </p>
-          <p className="mt-4 text-sm md:text-base leading-relaxed">
-            At PNSA, our mission is clear: to unearth and nurture young talents,
-            molding them into future Olympic champions. Our state-of-the-art facility,
-            equipped with cutting-edge weapons and technology, sets the stage for
-            excellence. Located in Coffee Board Layout, our high-performance centre is
-            a hub of talent and determination.
-          </p>
-          <p className="mt-4 text-sm md:text-base leading-relaxed">
-            Over the years, PNSA has proudly produced several international and
-            national-level players, showcasing the efficacy of our training programs
-            and coaching staff. But our reach extends beyond our academy walls. We
-            collaborate with schools to provide shooting facilities and coaching,
-            helping set up shooting ranges and fostering budding talents at grassroots
-            levels.
-          </p>
-          <p className="mt-6 font-semibold text-base md:text-lg">
-            Join us at PNSA, where the pursuit of greatness is not just a goal but a
-            way of life.
-          </p>
-        </div>
-      </section>
+<section
+  className="relative w-full h-[80vh] flex items-center justify-center px-4"
+  style={{ background: "linear-gradient(135deg, #F58634, #07874D)" }}
+>
+  {/* Orange card with white border */}
+  <div className="bg-orange-600 border-4 sm:border-8 border-white shadow-xl max-w-4xl w-full p-6 md:p-12 text-center text-white">
+    <h1 className="text-2xl md:text-3xl font-bold">PNSA</h1>
+    <div className="w-16 h-0.5 bg-white mx-auto my-4"></div>
+    <p className="text-sm md:text-base leading-relaxed">
+      Welcome to the Prakash Nanjappa Shooting Academy (PNSA), where passion
+      meets precision and dreams take flight. Founded in 2018 by the esteemed
+      Olympian and Arjuna Awardee, Prakash Nanjappa, PNSA stands as a beacon of
+      relentless dedication towards the growth of shooting sports in our
+      country.
+    </p>
+    <p className="mt-4 text-sm md:text-base leading-relaxed">
+      At PNSA, our mission is clear: to unearth and nurture young talents,
+      molding them into future Olympic champions. Our state-of-the-art facility,
+      equipped with cutting-edge weapons and technology, sets the stage for
+      excellence. Located in Coffee Board Layout, our high-performance centre is
+      a hub of talent and determination.
+    </p>
+    <p className="mt-4 text-sm md:text-base leading-relaxed">
+      Over the years, PNSA has proudly produced several international and
+      national-level players, showcasing the efficacy of our training programs
+      and coaching staff. But our reach extends beyond our academy walls. We
+      collaborate with schools to provide shooting facilities and coaching,
+      helping set up shooting ranges and fostering budding talents at grassroots
+      levels.
+    </p>
+    <p className="mt-6 font-semibold text-base md:text-lg">
+      Join us at PNSA, where the pursuit of greatness is not just a goal but a
+      way of life.
+    </p>
+  </div>
+</section>
 
       {/* About Grid Section (immediately below hero) */}
       <section className="bg-white text-black px-6 py-12 max-w-7xl lg:px-16 mx-auto">

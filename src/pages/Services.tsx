@@ -14,6 +14,27 @@ import {
   ArrowRight
 } from "lucide-react";
 
+const courses = [
+  {
+    id: 1,
+    title: "Foundational Course",
+    description: "Perfect for complete beginners. Learn the basics of shooting sports, safety protocols, and fundamental techniques.",
+    image: "https://picsum.photos/seed/foundational/800/500"
+  },
+  {
+    id: 2,
+    title: "Beginner's Course",
+    description: "Build upon basic skills with structured training programs designed for those with some shooting experience.",
+    image: "https://picsum.photos/seed/beginner/800/500"
+  },
+  {
+    id: 3,
+    title: "Intermediate Course",
+    description: "Advanced training for shooters ready to compete. Focus on technique refinement and competition preparation.",
+    image: "https://picsum.photos/seed/intermediate/800/500"
+  }
+];
+
 const services = [
   {
     icon: Target,
@@ -149,14 +170,14 @@ export default function Services() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1,2,3,4,5].map((i) => (
-              <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
-                <img src={`https://picsum.photos/seed/course${i}/800/500`} alt="Course" className="w-full h-48 object-cover" />
+            {courses.map((course) => (
+              <div key={course.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src={course.image} alt={course.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Course {i}</h3>
-                  <p className="text-gray-600 mb-4">Short description about Course {i} detailing content and benefits.</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{course.title}</h3>
+                  <p className="text-gray-600 mb-4">{course.description}</p>
                   <Button asChild variant="outline" className="w-full">
-                    <Link to={`/courses/${i}`}>Learn More</Link>
+                    <Link to={`/courses/${course.id}`}>Learn More</Link>
                   </Button>
                 </div>
               </div>

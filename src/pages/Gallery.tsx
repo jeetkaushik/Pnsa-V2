@@ -1,80 +1,148 @@
 import Layout from "@/components/Layout/Layout";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import founderImage from "@/assets/Hero1.jpeg";
 import studentImage from "@/assets/Hero2.jpeg";
 import galleryBanner from "@/assets/gallery_banner.png"
+import img1 from "@/assets/Hero3.jpeg"
+import img2 from "@/assets/Hero4.jpeg"
+import img3 from "@/assets/about-us-hero.png"
+import img4 from "@/assets/testi1.png"
+import img5 from "@/assets/gal1.jpeg"
+import img6 from "@/assets/gal2.jpeg"
+import img7 from "@/assets/gal3.jpeg"
+import img8 from "@/assets/gal4.jpeg"
+import img9 from "@/assets/gal5.jpeg"
+import img10 from "@/assets/gal6.jpeg"
+import img11 from "@/assets/gal7.jpeg"
+import img12 from "@/assets/gal8.jpeg"
+import img13 from "@/assets/gal9.jpeg"
+import img14 from "@/assets/gal10.jpeg"
+import img15 from "@/assets/gal11.jpeg"
+import img16 from "@/assets/gal12.jpeg"
+
+
+
+
 
 const galleryItems = [
   {
     id: 1,
     src: founderImage,
     alt: "Prakash Nanjappa",
-    category: "Awards",
     title: "Founder & Olympic Champion"
   },
   {
     id: 2,
     src: studentImage,
     alt: "Student Achievement",
-    category: "Students",
     title: "Student Success Story"
   },
   {
     id: 3,
-    src: founderImage,
+    src: img1,
     alt: "Competition",
-    category: "Events",
     title: "National Competition"
   },
   {
     id: 4,
-    src: studentImage,
+    src: img2,
     alt: "Awards Ceremony",
-    category: "Awards",
     title: "Achievement Recognition"
   },
   {
     id: 5,
-    src: founderImage,
+    src: img3,
     alt: "Coaching Session",
-    category: "Training",
     title: "Expert Coaching"
   },
   {
     id: 6,
-    src: studentImage,
+    src: img4,
     alt: "Team Photo",
-    category: "Students",
     title: "PNSA Team"
-  }
+  },
+  {
+    id: 7,
+    src: img5,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 8,
+    src: img6,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 9,
+    src: img7,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 10,
+    src: img8,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 11,
+    src: img9,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 12,
+    src: img10,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 13,
+    src: img11,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 14,
+    src: img12,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 15,
+    src: img13,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 16,
+    src: img14,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 17,
+    src: img15,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  {
+    id: 18,
+    src: img16,
+    alt: "Team Photo",
+    title: "PNSA Team"
+  },
+  
 ];
 
-const categories = ["All", "Facilities", "Training", "Students", "Awards", "Events"];
-
 export default function Gallery() {
-  const [activeCategory, setActiveCategory] = useState("All");
   const [selectedImage, setSelectedImage] = useState<typeof galleryItems[0] | null>(null);
-
-  const filteredItems = activeCategory === "All" 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === activeCategory);
 
   return (
     <Layout>
       {/* Hero Section */}
-      {/* <section className="bg-gradient-hero py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center text-white">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">Gallery</h1>
-            <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
-              Apply Scientific Methods And Create World Class Training Environment 
-              For Marksmen To Unleash Their Full Potential
-            </p>
-          </div>
-        </div>
-      </section> */}
-        <section className="py-16">
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <img src={galleryBanner} alt="" className="w-full h-full object-cover h-1/2" />
         </div>
@@ -83,40 +151,19 @@ export default function Gallery() {
       {/* Gallery Section */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={activeCategory === category ? "orange" : "outline"}
-                onClick={() => setActiveCategory(category)}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
-
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredItems.map((item) => (
+            {galleryItems.map((item) => (
               <div 
                 key={item.id}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
                 onClick={() => setSelectedImage(item)}
               >
                 <img 
                   src={item.src} 
                   alt={item.alt}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <div className="text-xs bg-pnsa-orange px-2 py-1 rounded mb-2 inline-block">
-                      {item.category}
-                    </div>
-                    <h3 className="font-semibold">{item.title}</h3>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
@@ -136,9 +183,6 @@ export default function Gallery() {
               className="w-full h-full object-contain"
             />
             <div className="absolute bottom-4 left-4 right-4 text-white">
-              <div className="text-sm bg-pnsa-orange px-3 py-1 rounded mb-2 inline-block">
-                {selectedImage.category}
-              </div>
               <h3 className="text-lg font-semibold">{selectedImage.title}</h3>
             </div>
             <button 
@@ -152,7 +196,7 @@ export default function Gallery() {
       )}
 
       {/* Achievement Stats */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -182,7 +226,7 @@ export default function Gallery() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }
