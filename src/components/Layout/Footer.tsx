@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Instagram, Facebook, AtSign, Mail, Phone, MapPin } from "lucide-react";
 import pnsaLogo from "@/assets/pnsa-logo.png";
 import footerimg from "@/assets/footer_bg.png"
 
@@ -84,28 +84,36 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Social</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/prakash-nanjappa-shooting-academy/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/pnsa10.9?igsh=MXNheTJ1a29ybGM3cg=="
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/19i2NzV4Ca/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.threads.net/@pnsa10.9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
               >
-                <Youtube className="h-5 w-5" />
+                <AtSign className="h-5 w-5" />
               </a>
             </div>
           </div>

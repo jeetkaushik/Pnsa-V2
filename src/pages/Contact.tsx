@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import ContactSection from "@/components/Home/ContactSection";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import FAQSection from "@/components/FAQSection";
 
 export default function Contact() {
   return (
@@ -34,7 +35,7 @@ export default function Contact() {
               <Phone className="h-8 w-8 text-pnsa-green mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
               <p className="text-gray-600 text-sm">
-                +91 7362528236
+                +91 9008736935
               </p>
             </div>
 
@@ -61,6 +62,9 @@ export default function Contact() {
 
       {/* Contact Form Section */}
       <ContactSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Map Section Placeholder */}
       <section className="py-16 bg-white">
