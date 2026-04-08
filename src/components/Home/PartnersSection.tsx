@@ -20,7 +20,7 @@ export default function PartnersSection(): JSX.Element {
             Our Partners
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We're proud to work with leading organizations in the shooting sports community
+            We're proud to work with leading organizations in the sports community
           </p>
         </div>
 

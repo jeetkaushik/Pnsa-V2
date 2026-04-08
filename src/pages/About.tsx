@@ -119,7 +119,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="group bg-orange-500 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-white border border-pnsa-orange/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
                 <Trophy className="w-8 h-8 text-pnsa-orange" />
@@ -136,12 +136,20 @@ export default function About() {
               <p className="text-gray-600 font-inter leading-relaxed">Integrity and sportsmanship are the cornerstones of our academy. We foster an environment where honesty, respect, and fair play are paramount. Our athletes are taught to uphold the highest ethical standards both on and off the range, promoting a culture of respect for competitors, coaches, and the sport itself.</p>
             </div>
 
+            <div className="group bg-white p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-white border border-blue-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                <Target className="w-8 h-8 text-blue-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-prosto">Discipline & Commitment</h3>
+              <p className="text-gray-600 font-inter leading-relaxed">Success in shooting sports demands discipline and unwavering commitment. At our academy, we instill these values in every athlete, encouraging them to stay focused, dedicated, and persistent in their training. We believe that through hard work and perseverance, our athletes can achieve their goals and surpass their own expectations.</p>
+            </div>
+
             <div className="group bg-green-500 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-white border border-pnsa-green/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
                 <Zap className="w-8 h-8 text-pnsa-green" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-3 font-prosto">Innovation & Growth</h3>
-              <p className="text-gray-900 font-inter leading-relaxed">We embrace innovation and continuous improvement in all our training methods and techniques. we ensure that our athletes receive the most up-to-date and effective training. We are dedicated to fostering a growth mindset, encouraging athletes to constantly seek new ways to enhance their skills and performance.</p>
+              <p className="text-gray-900 font-inter leading-relaxed">We embrace innovation and continuous improvement in all our training methods and techniques. By staying at the forefront of technological advancements and coaching practices, we ensure that our athletes receive the most up-to-date and effective training. We are dedicated to fostering a growth mindset, encouraging athletes to constantly seek new ways to enhance their skills and performance.</p>
             </div>
           </div>
         </div>
@@ -199,29 +207,37 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="group bg-orange-500 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-white border border-pnsa-orange/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
                 <Trophy className="w-8 h-8 text-pnsa-orange" />
               </div>
-              <h3 className="text-white text-2xl font-bold text-gray-900 mb-3 font-prosto">Excellence & Precision</h3>
-              <p className="text-white text-gray-600 font-inter leading-relaxed">At PNSA, we strive for the highest standards of excellence in every aspect of our training. Precision and accuracy are not just goals but a way of life. We are committed to helping each athlete reach their full potential through rigorous practice, attention to detail, and a relentless pursuit of perfection.</p>
+              <h3 className="text-white text-2xl font-bold text-gray-900 mb-3 font-prosto">Expert Guidance</h3>
+              <p className="text-white text-gray-600 font-inter leading-relaxed">The academy is founded by Prakash Nanjappa, an accomplished shooter with international accolades, including a Commonwealth Games gold medal. Trainees benefit from his extensive knowledge, experience, and personal attention, ensuring high-quality training and mentorship.</p>
             </div>
 
             <div className="group bg-white p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-white border border-blue-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
                 <Award className="w-8 h-8 text-blue-500" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-prosto">Integrity & Sportsmanship</h3>
-              <p className="text-gray-600 font-inter leading-relaxed">Integrity and sportsmanship are the cornerstones of our academy. We foster an environment where honesty, respect, and fair play are paramount. Our athletes are taught to uphold the highest ethical standards both on and off the range, promoting a culture of respect for competitors, coaches, and the sport itself.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-prosto">State-of-the-Art Facilities</h3>
+              <p className="text-gray-600 font-inter leading-relaxed">The academy is equipped with advanced shooting ranges and the latest equipment, providing an ideal environment for both beginners and experienced shooters to hone their skills. This access to top-notch facilities can significantly enhance the training experience and performance.</p>
             </div>
 
             <div className="group bg-green-500 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-white border border-pnsa-green/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
                 <Zap className="w-8 h-8 text-pnsa-green" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3 font-prosto">Innovation & Growth</h3>
-              <p className="text-gray-900 font-inter leading-relaxed">We embrace innovation and continuous improvement in all our training methods and techniques. we ensure that our athletes receive the most up-to-date and effective training. We are dedicated to fostering a growth mindset, encouraging athletes to constantly seek new ways to enhance their skills and performance.</p>
+              <h3 className="text-2xl font-bold text-white mb-3 font-prosto">Comprehensive Training Programs</h3>
+              <p className="text-gray-900 font-inter leading-relaxed">The academy offers a variety of programs tailored to different skill levels, from beginner to advanced. These programs include technical training, mental conditioning, and competitive strategies, ensuring a well-rounded development for aspiring shooters.</p>
+            </div>
+
+            <div className="group bg-white p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-white border border-blue-400/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                <Users className="w-8 h-8 text-blue-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-prosto">Proven Track Record</h3>
+              <p className="text-gray-600 font-inter leading-relaxed">The academy has a history of producing successful shooters who have excelled in national and international competitions. Training in such a successful and reputed institution can boost a shooter’s confidence and open doors to competitive opportunities.</p>
             </div>
           </div>
         </div>

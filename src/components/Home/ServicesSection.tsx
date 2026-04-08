@@ -39,8 +39,8 @@ export default function ServicesSection() {
             What we do
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto font-inter">
-            At PNSA, We Have A Well-Designed Program Routine That Is Customized And Tailored 
-            For Every Shooter To Attain:
+            At PNSA, We have a well-designed program routine that is customized and tailored 
+            for every shooter to attain:
           </p>
         </div>
 

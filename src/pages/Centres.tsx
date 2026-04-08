@@ -1,26 +1,62 @@
 import Layout from "@/components/Layout/Layout";
-import { MapPin, Phone, Clock, Users } from "lucide-react";
-import heroImage from "@/assets/hero-shooting-range.jpg";
+import { MapPin, Phone, Clock, Mail, Plus, ChevronRight } from "lucide-react";
 import centersBanner from "@/assets/centers_banner.png";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const centres = [
   {
-    name: "PNSA Main Centre",
-    address: "Rohine Residency, ABC, Bangalore Colony",
-    phone: "+91 7362528236",
-    email: "pnsa10.9@gmail.com",
-    timing: "Mon-Fri: 8AM-9PM, Sat: 9AM-6PM, Sun: 9AM-2PM",
-    facilities: ["10m Air Rifle Range", "10m Air Pistol Range", "50m Rifle Range", "Professional Equipment", "Video Analysis", "Fitness Area"],
-    image: heroImage
+    name: "PNSA, Central Bengaluru",
+    phone: "+91 9008736935",
+    email: "info@pnshooting.in",
+    address: "BCU Basecamp by Push Sports, University Campus, Palace Rd, Gandhi Nagar, Bengaluru, Karnataka 560009",
+    timing: "Please contact the centre for timings",
+    facilities: [],
+    image: "https://picsum.photos/seed/pnsa-central-bengaluru/800/500"
   },
   {
-    name: "PNSA Training Annex",
-    address: "Sports Complex, Bangalore",
-    phone: "+91 7362528236",
-    email: "training@pnsa.com",
-    timing: "Mon-Sat: 6AM-8PM, Sun: Closed",
-    facilities: ["Outdoor Range", "Competition Prep Area", "Mental Training Room", "Equipment Storage"],
-    image: heroImage
+    name: "PNSA, Sarjapur, Bengaluru",
+    phone: "+91 9008736935",
+    email: "info@pnshooting.in",
+    address: "Greenwood High International School, No. 8-14, Chikkawadayarapura, Near Heggondahalli Gunjur Post, Varthur - Sarjapur Rd, Varthur, Karnataka 560087",
+    timing: "Please contact the centre for timings",
+    facilities: [],
+    image: "https://picsum.photos/seed/pnsa-sarjapur-bengaluru/800/500"
+  },
+  {
+    name: "PNSA, Bannerghatta, Bengaluru",
+    phone: "+91 9008736935",
+    email: "info@pnshooting.in",
+    address: "Greenwood High International School, No:61, Off Bannerghatta Road, CK Palya Rd, adjacent to Hommaedevenahalli, Bengaluru, Karnataka 560083",
+    timing: "Please contact the centre for timings",
+    facilities: [],
+    image: "https://picsum.photos/seed/pnsa-bannerghatta-bengaluru/800/500"
+  },
+  {
+    name: "PNSA, Vasant Kunj, Delhi",
+    phone: "+91 9008736935",
+    email: "info@pnshooting.in",
+    address: "GD Goenka, The Flagship School, Vasant Kunj, Bhagwan Mahaveer Rd, Pocket 8, Sector B, Vasant Kunj, New Delhi, Delhi 110070",
+    timing: "Please contact the centre for timings",
+    facilities: [],
+    image: "https://picsum.photos/seed/pnsa-vasant-kunj-delhi/800/500"
+  },
+  {
+    name: "PNSA - Pacific Shooting Club, Bareilly, U.P.",
+    phone: "+91 9008736935 / 7467000007",
+    email: "pacificshootingclub@gmail.com",
+    address: "8CV8+X35, Jail Rd, Civil Lines, Bareilly, Uttar Pradesh 243001",
+    timing: "Please contact the centre for timings",
+    facilities: [],
+    image: "https://picsum.photos/seed/pnsa-pacific-bareilly/800/500"
+  },
+  {
+    name: "PNSA, Derabassi, Punjab",
+    phone: "+91 9008736935",
+    email: "info@pnshooting.in",
+    address: "Dikshant International School, Haripur Kuran, Mukandpur Rd, near Dak Bungalow and HP Petrol Pump, Dera Bassi, Punjab 140507",
+    timing: "Please contact the centre for timings",
+    facilities: [],
+    image: "https://picsum.photos/seed/pnsa-derabassi-punjab/800/500"
   }
 ];
 
@@ -47,54 +83,64 @@ export default function Centres() {
       {/* Centres List */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="space-y-12">
-            {centres.map((centre, index) => (
-              <div key={centre.name} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <img 
-                    src={centre.image} 
-                    alt={centre.name} 
-                    className="w-full h-64 object-cover rounded-lg shadow-elegant"
-                  />
-                </div>
-                
-                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {centre.name}
-                  </h2>
-                  
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-start">
-                      <MapPin className="h-5 w-5 text-pnsa-orange mr-3 mt-0.5" />
-                      <span className="text-gray-700">{centre.address}</span>
-                    </div>
-                    
-                    <div className="flex items-center">
-                      <Phone className="h-5 w-5 text-pnsa-green mr-3" />
-                      <span className="text-gray-700">{centre.phone}</span>
-                    </div>
-                    
-                    <div className="flex items-start">
-                      <Clock className="h-5 w-5 text-blue-600 mr-3 mt-0.5" />
-                      <span className="text-gray-700">{centre.timing}</span>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {centres.map((centre) => (
+              <div key={centre.name} className="rounded-lg border border-gray-200 overflow-hidden bg-white">
+                <img
+                  src={centre.image}
+                  alt={centre.name}
+                  className="w-full h-56 object-cover"
+                />
 
-                  <div className="mb-6">
-                    <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
-                      <Users className="h-5 w-5 text-pnsa-orange mr-2" />
-                      Facilities Available
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {centre.facilities.map((facility, idx) => (
-                        <div key={idx} className="flex items-center">
-                          <span className="w-2 h-2 bg-pnsa-orange rounded-full mr-2"></span>
-                          <span className="text-gray-600 text-sm">{facility}</span>
+                <Accordion type="single" collapsible>
+                  <AccordionItem value={centre.name} className="border-b-0">
+                    <AccordionTrigger className="group bg-pnsa-orange hover:no-underline px-3 py-2 text-white min-h-16 [&>svg]:hidden">
+                      <div className="w-full flex items-center justify-between gap-2">
+                        <div className="flex items-start gap-2 min-w-0">
+                          <Plus className="h-4 w-4 shrink-0" />
+                          <span className="text-sm font-bold uppercase text-left leading-tight line-clamp-2">
+                            {centre.name}
+                          </span>
                         </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                        <ChevronRight className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-90" />
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pt-4 pb-5">
+                      <div className="space-y-3 text-sm">
+                        <div className="flex items-start gap-2 text-gray-700">
+                          <MapPin className="h-4 w-4 text-pnsa-orange mt-0.5 shrink-0" />
+                          <span>{centre.address}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-700">
+                          <Phone className="h-4 w-4 text-pnsa-green shrink-0" />
+                          <span>{centre.phone}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-700">
+                          <Mail className="h-4 w-4 text-blue-600 shrink-0" />
+                          <span>{centre.email}</span>
+                        </div>
+                        <div className="flex items-start gap-2 text-gray-700">
+                          <Clock className="h-4 w-4 text-purple-600 mt-0.5 shrink-0" />
+                          <span>{centre.timing}</span>
+                        </div>
+                      </div>
+
+                      {centre.facilities.length > 0 && (
+                        <div className="mt-4">
+                          <h3 className="font-semibold text-gray-900 mb-2">Facilities</h3>
+                          <ul className="space-y-1">
+                            {centre.facilities.map((facility) => (
+                              <li key={facility} className="text-sm text-gray-600 flex items-start gap-2">
+                                <span className="mt-1 h-2 w-2 rounded-full bg-pnsa-orange shrink-0" />
+                                <span>{facility}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             ))}
           </div>

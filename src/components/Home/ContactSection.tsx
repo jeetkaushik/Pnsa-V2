@@ -35,14 +35,14 @@ export default function ContactSection() {
               Get In Touch With Us
             </h2>
             <p className="text-gray-600 mb-8 font-inter">
-              If You Have Any Feedback Or Questions About Our Clubs, Our Website 
-              Or Our Services In General, Please Contact Us By Filling Out The Form.
+              If you have any feedback or questions about our clubs, our website 
+              or our services in general, please contact us by filling out the form.
             </p>
 
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Open Hours</h3>
+              {/* <h3 className="text-xl font-semibold text-gray-900 mb-4">Open Hours</h3> */}
               
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-pnsa-orange" />
                   <span className="text-gray-700 font-inter">
@@ -63,24 +63,24 @@ export default function ContactSection() {
                     <strong>Sunday :</strong> 09:00 AM To 02:00 PM
                   </span>
                 </div>
-              </div>
+              </div> */}
 
               <div className="pt-6 space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-pnsa-green" />
                   <span className="text-gray-700">
-                    Esteem Mall #127 & 128, 4th floor, Bellary Rd, Hebbal, Bangalore, Karnataka 560024, IN
+                    BCU Basecamp by Push Sports, University Campus, Palace Rd, Gandhi Nagar, Bengaluru, Karnataka 560009
                   </span>
                 </div>
                 
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-pnsa-green" />
-                  <span className="text-gray-700">+91 7362528236</span>
+                  <span className="text-gray-700">+91 9008736935</span>
                 </div>
                 
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-pnsa-green" />
-                  <span className="text-gray-700">pnsa10.9@gmail.com</span>
+                  <span className="text-gray-700">info@pnshooting.in</span>
                 </div>
               </div>
             </div>

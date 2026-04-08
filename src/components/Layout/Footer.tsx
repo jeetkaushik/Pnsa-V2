@@ -32,15 +32,15 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Rohine Residency, ABC<br />Banglore Colony</span>
+                <span>BCU Basecamp by Push Sports, University Campus, Palace Rd, Gandhi Nagar, Bengaluru, Karnataka 560009</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+91 7362528236</span>
+                <span>+91 9008736935</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>pnsa10.9@gmail.com</span>
+                <span>info@pnshooting.in</span>
               </div>
             </div>
           </div>

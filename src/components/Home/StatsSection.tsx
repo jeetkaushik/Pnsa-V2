@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const stats = [
   { label: "Olympian", value: 2 },
-  { label: "International Players", value: 10 },
+  { label: "International Players", value: 20},
   { label: "National Players", value: 100 },
   { label: "State Players", value: 200 },
 ];

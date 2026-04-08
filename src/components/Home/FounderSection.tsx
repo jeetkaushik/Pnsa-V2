@@ -27,24 +27,13 @@ export default function FounderSection() {
             
             <div className="max-w-none text-gray-700 mb-6 font-inter leading-relaxed space-y-4">
               <p>
-                Prakash Nanjappa is a distinguished Indian shooter renowned for his 
-                exceptional skills in the 10-meter air pistol and 50-meter pistol events. 
-                Representing India on the international stage, he has showcased remarkable 
-                precision and determination, earning him a revered spot among the country's 
-                top athletes. His career is marked by a series of notable achievements, 
-                including representing India at the prestigious Olympic Games.
+                Prakash Nanjappa, Founder & CEO of Prakash Nanjappa Shooting Academy (PNSA), is one of India's most accomplished and respected pistol shooters, with an illustrious career spanning national and international success. He has represented India at the highest level, including the Olympic Games (Rio 2016), where he competed as one of the country's finest shooting athletes. His journey is marked by exceptional precision, discipline, and a relentless pursuit of excellence.
               </p>
               
               <p>
-                Further cementing his legacy in Indian sports, Prakash was honored with 
-                the Arjuna Award, one of the highest accolades for sports excellence in 
-                India, recognizing his significant contributions and outstanding performance 
-                in shooting. Prakash Nanjappa's journey is a testament to his relentless 
-                pursuit of excellence and his unwavering dedication to his sport. He has 
-                brought laurels to our country by winning at various international 
-                competitions like: World Cup, Asian Games, Commonwealth Games, Asian 
-                Championship and Commonwealth Championship.
+                He is a proud recipient of the prestigious Arjuna Award, one of India's highest honors in sports, recognizing his outstanding contribution and achievements in shooting. Over the years, he has brought immense pride to the nation by winning medals at premier international competitions, including the ISSF World Cup, Asian Games, Commonwealth Games, Asian Championships, and Commonwealth Championships.
               </p>
+              <p>With an impressive tally of multiple international medals (Gold, Silver, and Bronze) and over 45+ national medals, he has consistently been among India's top performers in shooting sports. His achievements include winning an Olympic quota, securing podium finishes at global championships, and setting national records. He is also a qualified sports psychologist and management professional, combining technical expertise with a scientific approach to athlete development.</p>
             </div>
 
             <Button asChild variant="orange" size="lg">
